@@ -2,7 +2,7 @@
 
 > 📅 **Fecha:** 30 de enero de 2025  
 > 👤 **Autor:** jarasa03  
-> 🔢 **Versión:** 1.0  
+> 🔢 **Versión:** 1.1  
 
 ## Índice  
 
@@ -12,7 +12,8 @@
    - [Arrancar el servidor](#arrancar-el-servidor)  
 2. [Configurar una base de datos existente](#configurar-una-base-de-datos-existente)  
    - [Para la integración de modelos y migraciones](#para-la-integración-de-modelos-y-migraciones)  
-3. [Enlaces importantes](#enlaces-importantes)  
+3. [Importar un modelo y crear un controlador](#importar-un-modelo-y-crear-un-controlador)  
+4. [Enlaces importantes](#enlaces-importantes)  
 
 ## Iniciar un proyecto
 
@@ -102,6 +103,14 @@ Finalmente, genera los modelos automáticamente:
 
 ```powershell
 php artisan code:models
+```
+
+### Importar un modelo y crear un controlador  
+
+Para generar un **controlador** que esté vinculado a un **modelo** y utilice las acciones de un **recurso**, ejecuta el siguiente comando:  
+
+```powershell
+php artisan make:controller ProductoController --model=Producto --resource
 ```
 
 ## Enlaces importantes
